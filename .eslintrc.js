@@ -13,7 +13,12 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'prettier',
   ],
-  ignorePatterns: ['dist', '.eslintrc.js', 'node_modules'],
+  ignorePatterns: [
+    'dist',
+    '.eslintrc.js',
+    'node_modules',
+    '**/types/generated/**',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',

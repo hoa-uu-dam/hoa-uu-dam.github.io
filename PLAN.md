@@ -37,11 +37,11 @@ hoa-uu-dam/
 
 ### 1.2 Strapi CMS Setup
 
-- [ ] Initialize Strapi project in `packages/cms`
-- [ ] Configure database connection (PostgreSQL for production, SQLite for dev)
-- [ ] Set up basic authentication and user roles
-- [ ] Configure CORS for frontend communication
-- [ ] Set up environment variables and configuration
+- [x] Initialize Strapi project in `packages/cms`
+- [x] Configure database connection (PostgreSQL for production, SQLite for dev)
+- [x] Set up basic authentication and user roles
+- [x] Configure CORS for frontend communication
+- [x] Set up environment variables and configuration
 
 ### 1.3 React Frontend Setup
 
