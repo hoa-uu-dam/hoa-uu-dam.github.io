@@ -45,11 +45,11 @@ hoa-uu-dam/
 
 ### 1.3 React Frontend Setup
 
-- [ ] Create Vite + React project in `packages/website`
-- [ ] Configure TypeScript
-- [ ] Set up Tailwind CSS or preferred styling solution
-- [ ] Configure routing with React Router
-- [ ] Set up API client for Strapi communication
+- [x] Create Vite + React project in `packages/website`
+- [x] Configure TypeScript
+- [x] Set up Tailwind CSS or preferred styling solution
+- [x] Configure routing with React Router
+- [x] Set up API client for Strapi communication
 
 ## Phase 2: Content Models & Core CMS Features (Week 2-3)
 
