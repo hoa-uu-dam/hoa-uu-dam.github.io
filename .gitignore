@@ -17,6 +17,9 @@ build/
 .tmp/
 .temp/
 
+# Turbo
+.turbo/
+
 # Runtime data
 pids
 *.pid

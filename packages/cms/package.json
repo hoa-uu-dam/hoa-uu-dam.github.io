@@ -11,6 +11,9 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "strapi": "strapi",
+    "lint": "echo 'No linting configured for CMS'",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo build",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
