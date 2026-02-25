@@ -1,14 +1,13 @@
 import { Link } from 'react-router-dom';
-import { useApi } from '../hooks/useApi';
-import apiService from '../services/api';
+import { useFeaturedBlogPosts } from '../hooks/useQueries';
 
 function Home() {
   // Fetch featured blog posts (this will show loading state until CMS is set up)
   const {
     data: featuredPosts,
-    loading,
+    isLoading: loading,
     error,
-  } = useApi(() => apiService.blogPosts.getFeatured(3), { immediate: true });
+  } = useFeaturedBlogPosts(3);
 
   return (
     <div className="min-h-screen bg-gray-50">
