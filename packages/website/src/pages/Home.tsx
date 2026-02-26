@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useFeaturedBlogPosts } from '../hooks/useQueries';
 
 function Home() {
+  const { t } = useTranslation();
   // Fetch featured blog posts (this will show loading state until CMS is set up)
   const {
     data: featuredPosts,
@@ -14,25 +16,22 @@ function Home() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-6xl font-bold mb-6">
-            Welcome to Our Buddhist Temple
-          </h1>
+          <h1 className="text-6xl font-bold mb-6">{t('home.hero.title')}</h1>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            A peaceful sanctuary for meditation, learning, and spiritual growth.
-            Join our community on the path to wisdom and enlightenment.
+            {t('home.hero.description')}
           </p>
           <div className="space-x-4">
             <Link
               to="/about"
               className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
             >
-              Learn About Us
+              {t('home.hero.learnAboutUs')}
             </Link>
             <Link
               to="/contact"
               className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors inline-block"
             >
-              Visit Us
+              {t('home.hero.visitUs')}
             </Link>
           </div>
         </div>
@@ -42,20 +41,19 @@ function Home() {
       <section className="py-16 px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">
-            Latest Teachings & Updates
+            {t('home.featured.title')}
           </h2>
 
           {loading && (
             <div className="text-center py-8">
-              <p className="text-gray-600">Loading latest posts from CMS...</p>
+              <p className="text-gray-600">{t('home.featured.loading')}</p>
             </div>
           )}
 
           {error && (
             <div className="text-center py-8">
               <p className="text-gray-600">
-                CMS not yet connected. Content will appear here once Strapi
-                content models are created.
+                {t('home.featured.cmsNotConnected')}
               </p>
             </div>
           )}
@@ -83,7 +81,7 @@ function Home() {
                       to={`/blog/${post.slug}`}
                       className="text-blue-600 hover:text-blue-800 font-medium"
                     >
-                      Read More →
+                      {t('home.featured.readMore')}
                     </Link>
                   </div>
                 </div>
@@ -97,18 +95,16 @@ function Home() {
                 {[1, 2, 3].map(i => (
                   <div key={i} className="bg-white rounded-lg shadow-lg p-6">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Weekly Dharma Talk {i}
+                      {t('home.featured.placeholderTitle')} {i}
                     </h3>
                     <p className="text-gray-600 mb-4">
-                      Join us for inspiring teachings and discussions on
-                      Buddhist philosophy and practice. Content will be managed
-                      through our CMS once content models are created.
+                      {t('home.featured.placeholderDescription')}
                     </p>
                     <Link
                       to="/blog"
                       className="text-blue-600 hover:text-blue-800 font-medium"
                     >
-                      View All Posts →
+                      {t('home.featured.viewAllPosts')}
                     </Link>
                   </div>
                 ))}
@@ -122,18 +118,16 @@ function Home() {
       <section className="bg-gray-100 py-16">
         <div className="max-w-4xl mx-auto text-center px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Join Our Community
+            {t('home.cta.title')}
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Discover peace, wisdom, and compassion through meditation and
-            Buddhist teachings. Everyone is welcome to participate in our
-            programs and events.
+            {t('home.cta.description')}
           </p>
           <Link
             to="/contact"
             className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block"
           >
-            Get in Touch
+            {t('home.cta.getInTouch')}
           </Link>
         </div>
       </section>

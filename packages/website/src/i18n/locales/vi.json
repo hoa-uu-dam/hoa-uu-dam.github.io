@@ -1,0 +1,31 @@
+{
+  "navigation": {
+    "home": "Trang Chủ",
+    "about": "Giới Thiệu",
+    "blog": "Blog",
+    "contact": "Liên Hệ",
+    "siteTitle": "🏛️ Chùa Hoa Ưu Đàm"
+  },
+  "home": {
+    "hero": {
+      "title": "Chào mừng đến với Chùa Phật giáo của chúng tôi",
+      "description": "Một nơi yên bình để thiền định, học hỏi và phát triển tâm linh. Hãy tham gia cộng đồng của chúng tôi trên con đường tìm kiếm trí tuệ và giác ngộ.",
+      "learnAboutUs": "Tìm hiểu về chúng tôi",
+      "visitUs": "Thăm chùa"
+    },
+    "featured": {
+      "title": "Những Bài Giảng và Cập Nhật Mới Nhất",
+      "loading": "Đang tải các bài viết mới nhất từ CMS...",
+      "cmsNotConnected": "CMS chưa được kết nối. Nội dung sẽ xuất hiện ở đây khi các mô hình nội dung Strapi được tạo.",
+      "readMore": "Đọc thêm →",
+      "placeholderTitle": "Pháp Thoại Hàng Tuần",
+      "placeholderDescription": "Tham gia cùng chúng tôi trong những bài giảng truyền cảm hứng và thảo luận về triết học và tu tập Phật giáo. Nội dung sẽ được quản lý thông qua CMS của chúng tôi khi các mô hình nội dung được tạo.",
+      "viewAllPosts": "Xem tất cả bài viết →"
+    },
+    "cta": {
+      "title": "Tham Gia Cộng Đồng Của Chúng Tôi",
+      "description": "Khám phá sự bình an, trí tuệ và lòng từ bi thông qua thiền định và giáo pháp Phật giáo. Mọi người đều được chào đón tham gia các chương trình và sự kiện của chúng tôi.",
+      "getInTouch": "Liên hệ với chúng tôi"
+    }
+  }
+}

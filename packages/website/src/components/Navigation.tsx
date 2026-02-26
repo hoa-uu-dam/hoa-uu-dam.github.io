@@ -1,13 +1,16 @@
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import LanguageToggle from './LanguageToggle';
 
 function Navigation() {
   const location = useLocation();
+  const { t } = useTranslation();
 
   const navItems = [
-    { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
-    { path: '/blog', label: 'Blog' },
-    { path: '/contact', label: 'Contact' },
+    { path: '/', label: t('navigation.home') },
+    { path: '/about', label: t('navigation.about') },
+    { path: '/blog', label: t('navigation.blog') },
+    { path: '/contact', label: t('navigation.contact') },
   ];
 
   return (
@@ -16,10 +19,10 @@ function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link to="/" className="text-2xl font-bold text-gray-900">
-              🏛️ Buddhist Temple
+              {t('navigation.siteTitle')}
             </Link>
           </div>
-          <div className="flex space-x-8">
+          <div className="flex items-center space-x-8">
             {navItems.map(item => (
               <Link
                 key={item.path}
@@ -33,6 +36,7 @@ function Navigation() {
                 {item.label}
               </Link>
             ))}
+            <LanguageToggle />
           </div>
         </div>
       </div>

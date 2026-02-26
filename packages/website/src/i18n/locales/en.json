@@ -1,0 +1,31 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "siteTitle": "🏛️ Buddhist Temple"
+  },
+  "home": {
+    "hero": {
+      "title": "Welcome to Our Buddhist Temple",
+      "description": "A peaceful sanctuary for meditation, learning, and spiritual growth. Join our community on the path to wisdom and enlightenment.",
+      "learnAboutUs": "Learn About Us",
+      "visitUs": "Visit Us"
+    },
+    "featured": {
+      "title": "Latest Teachings & Updates",
+      "loading": "Loading latest posts from CMS...",
+      "cmsNotConnected": "CMS not yet connected. Content will appear here once Strapi content models are created.",
+      "readMore": "Read More →",
+      "placeholderTitle": "Weekly Dharma Talk",
+      "placeholderDescription": "Join us for inspiring teachings and discussions on Buddhist philosophy and practice. Content will be managed through our CMS once content models are created.",
+      "viewAllPosts": "View All Posts →"
+    },
+    "cta": {
+      "title": "Join Our Community",
+      "description": "Discover peace, wisdom, and compassion through meditation and Buddhist teachings. Everyone is welcome to participate in our programs and events.",
+      "getInTouch": "Get in Touch"
+    }
+  }
+}
