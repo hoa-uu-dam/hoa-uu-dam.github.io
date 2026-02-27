@@ -26,5 +26,6 @@
       "cache": false
     }
   },
-  "globalDependencies": ["package.json", "tsconfig.json", ".env*"]
+  "globalDependencies": ["package.json", "tsconfig.json", ".env*"],
+  "ui": "tui"
 }
