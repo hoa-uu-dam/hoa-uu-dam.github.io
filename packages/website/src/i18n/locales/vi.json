@@ -1,31 +1,232 @@
 {
-  "navigation": {
-    "home": "Trang Chủ",
-    "about": "Giới Thiệu",
-    "blog": "Blog",
-    "contact": "Liên Hệ",
-    "siteTitle": "🏛️ Chùa Hoa Ưu Đàm"
+  "site": {
+    "title": "Hoa Ưu Đàm",
+    "tagline": "Zen Study"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Về chúng tôi",
+    "events": "Sự kiện",
+    "teachings": "Pháp thoại",
+    "news": "Tin tức",
+    "resources": "Tài nguyên",
+    "contact": "Liên hệ",
+    "language": "Ngôn ngữ",
+    "openMenu": "Mở menu",
+    "closeMenu": "Đóng menu"
   },
   "home": {
-    "hero": {
-      "title": "Chào mừng đến với Chùa Phật giáo của chúng tôi",
-      "description": "Một nơi yên bình để thiền định, học hỏi và phát triển tâm linh. Hãy tham gia cộng đồng của chúng tôi trên con đường tìm kiếm trí tuệ và giác ngộ.",
-      "learnAboutUs": "Tìm hiểu về chúng tôi",
-      "visitUs": "Thăm chùa"
+    "heroImageAlt": "hero · sangha walking through autumn maples",
+    "heroTitle": "Một cộng đồng thực tập chánh niệm, theo truyền thống Làng Mai.",
+    "heroDescription": "Chúng tôi xin trân trọng mời bạn cùng tham gia thiền hành, pháp thoại, ngày quán niệm, và sự thực tập đơn sơ có mặt cho nhau.",
+    "browseLessons": "Xem Bài Pháp",
+    "findEvents": "Tìm Sự Kiện",
+    "newsEyebrow": "Tin Tức",
+    "viewAllNews": "Xem tất cả →",
+    "eventsEyebrow": "Sự Kiện Sắp Tới",
+    "viewAllEvents": "Xem tất cả →",
+    "teachingsEyebrow": "Pháp Thoại",
+    "browseAllLessons": "Duyệt tất cả bài pháp →",
+    "visitEyebrow": "Đến Thăm",
+    "visitTitle": "Cửa <em>Hoa Ưu Đàm</em> luôn rộng mở.",
+    "visitDescription": "Dù bạn mới đến với chánh niệm hay đã thực tập lâu năm, bạn đều được chào đón. Hãy đến đi cùng chúng tôi.",
+    "getInTouch": "Liên hệ →"
+  },
+  "about": {
+    "eyebrow": "Về Chúng Tôi",
+    "title": "Một tăng thân nhỏ, <em>bén rễ</em> trong chánh niệm.",
+    "founderImageAlt": "founders teaching outdoors",
+    "intro": "Được thành lập năm 2014 bởi một nhóm cư sĩ và chư tăng ni viếng thăm, Hoa Ưu Đàm đã lớn lên từ những buổi tọa thiền nhỏ trong phòng khách trở thành một trung tâm cộng đồng. Chúng tôi theo truyền thống Làng Mai của Thiền sư Thích Nhất Hạnh — một truyền thống chánh niệm dấn thân, nhẹ nhàng, và an vui.",
+    "name": "Tên gọi của chúng tôi — Hoa Ưu Đàm — chỉ loài hoa udumbara, theo kinh sách chỉ nở ba ngàn năm một lần. Đó là lời nhắc nhở về tính chất quý hiếm của kiếp người này.",
+    "missionEyebrow": "Sứ Mệnh",
+    "missionTitle": "Là nơi nương tựa cho <em>đời sống chánh niệm</em> — và đồng hành, nhẹ nhàng, với mọi người đến đây.",
+    "pillars": [
+      {
+        "n": "01",
+        "title": "Thực Tập",
+        "body": "Cơ hội hàng ngày, hàng tuần, và theo mùa để ngồi, đi, và thở cùng cộng đồng."
+      },
+      {
+        "n": "02",
+        "title": "Học Hỏi",
+        "body": "Những bài pháp dễ tiếp cận, gốc rễ từ kinh tạng và giọng nói nhẹ nhàng của Làng Mai."
+      },
+      {
+        "n": "03",
+        "title": "Phụng Sự",
+        "body": "Chăm sóc nhau và chăm sóc thế giới — nhẹ nhàng, bền bỉ, không bám víu."
+      },
+      {
+        "n": "04",
+        "title": "Nương Tựa",
+        "body": "Một mái nhà ấm áp cho bất cứ ai tìm kiếm sự dừng lại, yên tĩnh, và bạn lành."
+      }
+    ]
+  },
+  "events": {
+    "eyebrow": "Sự Kiện",
+    "title": "Các buổi gặp sắp tới",
+    "searchPlaceholder": "Tìm sự kiện…",
+    "month": "Tháng 5, 2026",
+    "filters": {
+      "all": "Tất cả",
+      "retreat": "Khóa tu",
+      "day": "Tu một ngày",
+      "daily": "Hàng ngày"
     },
-    "featured": {
-      "title": "Những Bài Giảng và Cập Nhật Mới Nhất",
-      "loading": "Đang tải các bài viết mới nhất từ CMS...",
-      "cmsNotConnected": "CMS chưa được kết nối. Nội dung sẽ xuất hiện ở đây khi các mô hình nội dung Strapi được tạo.",
-      "readMore": "Đọc thêm →",
-      "placeholderTitle": "Pháp Thoại Hàng Tuần",
-      "placeholderDescription": "Tham gia cùng chúng tôi trong những bài giảng truyền cảm hứng và thảo luận về triết học và tu tập Phật giáo. Nội dung sẽ được quản lý thông qua CMS của chúng tôi khi các mô hình nội dung được tạo.",
-      "viewAllPosts": "Xem tất cả bài viết →"
-    },
-    "cta": {
-      "title": "Tham Gia Cộng Đồng Của Chúng Tôi",
-      "description": "Khám phá sự bình an, trí tuệ và lòng từ bi thông qua thiền định và giáo pháp Phật giáo. Mọi người đều được chào đón tham gia các chương trình và sự kiện của chúng tôi.",
-      "getInTouch": "Liên hệ với chúng tôi"
+    "ledBy": "Hướng dẫn",
+    "addToCalendar": "Thêm vào lịch",
+    "items": {
+      "peaceWalk": {
+        "title": "Đi bộ vì Hòa Bình & Pháp thoại",
+        "type": "Khóa tu",
+        "description": "Thiền hành có hướng dẫn qua khu vườn chùa, tiếp theo là buổi pháp thoại công cộng về việc nuôi dưỡng bình an trong đời sống hàng ngày."
+      },
+      "trueLove": {
+        "title": "Khóa tu: Tình Thương Chân Thật Chữa Lành",
+        "type": "Khóa tu cuối tuần",
+        "description": "Khóa tu im lặng ba ngày khám phá bốn yếu tố của tình thương chân thật: từ, bi, hỷ, xả."
+      },
+      "dayOfMindfulness": {
+        "title": "Ngày Quán Niệm",
+        "type": "Tu một ngày",
+        "description": "Hãy cùng chúng tôi tham dự một ngày trọn vẹn với thiền có hướng dẫn, ăn cơm trong chánh niệm, pháp đàm, và tu tập cộng đồng."
+      },
+      "morningSitting": {
+        "title": "Tọa thiền và Tụng kinh buổi sáng",
+        "type": "Tu tập hàng ngày",
+        "description": "Tọa thiền và tụng kinh trực tuyến bằng tiếng Việt và tiếng Anh. Mở cho tất cả mọi người, mỗi sáng trừ thứ Hai."
+      }
+    }
+  },
+  "teachings": {
+    "eyebrow": "Pháp Thoại",
+    "title": "Thư viện những <em>tiếng nói an</em>.",
+    "items": {
+      "heartOfUnderstanding": {
+        "title": "Trái Tim Hiểu Biết",
+        "type": "Pháp thoại",
+        "excerpt": "Về sự thực tập nhìn sâu và trí tuệ của sự tương tức."
+      },
+      "walkingMeditation": {
+        "title": "Thiền Hành",
+        "type": "Hướng dẫn thực tập",
+        "excerpt": "Lời giới thiệu nhẹ nhàng về việc đem chánh niệm vào từng bước chân."
+      },
+      "fiveTrainings": {
+        "title": "Năm Giới",
+        "type": "Bài giảng",
+        "excerpt": "Suy ngẫm hiện đại về nền tảng đạo đức của đời sống chánh niệm."
+      },
+      "beginningAnew": {
+        "title": "Làm Mới",
+        "type": "Thực tập",
+        "excerpt": "Phương pháp thực tập để hàn gắn các mối quan hệ và bắt đầu lại."
+      }
+    }
+  },
+  "news": {
+    "eyebrow": "Tin Tức",
+    "title": "Từ tăng thân <em>Hoa Ưu Đàm</em>.",
+    "readLetter": "Đọc tiếp →",
+    "items": {
+      "trueLoveRetreat": {
+        "title": "Khóa tu cuối tuần: Tình Thương Chữa Lành",
+        "category": "Khóa tu",
+        "excerpt": "Ba ngày thực tập về bốn yếu tố của tình thương chân thật. Mở đăng ký cho khóa tháng Năm."
+      },
+      "australiaTour": {
+        "title": "Lưu diễn Úc — Bình An là Con Đường",
+        "category": "Chuyến đi",
+        "excerpt": "Sư cô Chân Không cùng tăng đoàn thăm Sydney, Melbourne và Brisbane mùa đông năm nay."
+      },
+      "togetherFuture": {
+        "title": "Cùng nhau ta có tương lai",
+        "category": "Tăng thân",
+        "excerpt": "Lá thư từ các sư anh, sư chị về việc tiếp tục thực tập trong thời khắc bất định."
+      },
+      "exhibition": {
+        "title": "Triển lãm đặc biệt tưởng niệm Thiền sư Nhất Hạnh",
+        "category": "Triển lãm",
+        "excerpt": "Hình ảnh, thư pháp và thư từ cá nhân được trưng bày tại thiền đường lớn suốt mùa hè."
+      },
+      "bankAccount": {
+        "title": "Thông báo: tài khoản ngân hàng mới",
+        "category": "Thông báo",
+        "excerpt": "Xin cập nhật thông tin — tài khoản cộng đồng đã chuyển sang ngân hàng mới trong tháng này."
+      },
+      "morningSit": {
+        "title": "Tọa thiền sáng trực tuyến hàng ngày",
+        "category": "Thực tập",
+        "excerpt": "Tham gia tọa thiền sáng trực tuyến lúc 6:00. Mọi bạn đạo gần xa đều được chào đón."
+      }
+    }
+  },
+  "resources": {
+    "eyebrow": "Tài Nguyên",
+    "title": "Lấy điều hữu ích, để lại phần còn lại.",
+    "sections": [
+      {
+        "cat": "Hướng Dẫn Thực Tập",
+        "items": [
+          "Thiền hành",
+          "Tọa thiền",
+          "Thư giãn sâu",
+          "Ăn cơm trong chánh niệm"
+        ]
+      },
+      {
+        "cat": "Đọc Thêm",
+        "items": [
+          "Sách giới thiệu",
+          "Kinh và tụng",
+          "Bản tin cũ",
+          "Thơ của tăng thân"
+        ]
+      },
+      {
+        "cat": "Cho Người Mới",
+        "items": [
+          "Điều cần biết khi đến thăm",
+          "Bắt đầu thực tập hàng ngày",
+          "Bảng chú giải",
+          "Câu hỏi thường gặp"
+        ]
+      },
+      {
+        "cat": "Trẻ Em & Gia Đình",
+        "items": [
+          "Ngày tu cùng gia đình",
+          "Truyện cho trái tim nhỏ",
+          "Thiền sỏi",
+          "Bài hát của tăng thân"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Liên Hệ",
+    "title": "Ghé thăm, hoặc gửi thư.",
+    "addressLabel": "Địa Chỉ",
+    "emailLabel": "Thư",
+    "hoursLabel": "Giờ Mở Cửa",
+    "hours": "Thứ Ba – Chủ Nhật · 8 giờ sáng – 5 giờ chiều"
+  },
+  "footer": {
+    "tagline": "Một cộng đồng thực tập chánh niệm theo truyền thống Làng Mai.",
+    "visit": "Đến Thăm",
+    "copy": "© 2026 Hoa Ưu Đàm",
+    "madeWith": "Làm với tình thương.",
+    "newsletter": "Bản tin",
+    "facebook": "Facebook",
+    "youtube": "YouTube",
+    "subLinks": {
+      "about": ["Câu chuyện", "Truyền thừa", "Quý thầy cô", "Tăng thân"],
+      "events": ["Lịch sự kiện", "Khóa tu", "Ngày quán niệm", "Tọa thiền"],
+      "teachings": ["Bài pháp", "Pháp thoại", "Thực tập có hướng dẫn", "Kinh"],
+      "news": ["Mới nhất", "Thông báo", "Bản tin"],
+      "resources": ["Cho bạn mới", "Sách đọc", "Gia đình & trẻ em", "Câu hỏi"],
+      "contact": ["Đến thăm", "Liên hệ", "Bản tin", "Cúng dường"]
     }
   }
 }

@@ -1,31 +1,247 @@
 {
-  "navigation": {
+  "site": {
+    "title": "Hoa Ưu Đàm",
+    "tagline": "Zen Study"
+  },
+  "nav": {
     "home": "Home",
-    "about": "About",
-    "blog": "Blog",
+    "about": "About Us",
+    "events": "Events",
+    "teachings": "Teachings",
+    "news": "News",
+    "resources": "Resources",
     "contact": "Contact",
-    "siteTitle": "🏛️ Buddhist Temple"
+    "language": "Language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "home": {
-    "hero": {
-      "title": "Welcome to Our Buddhist Temple",
-      "description": "A peaceful sanctuary for meditation, learning, and spiritual growth. Join our community on the path to wisdom and enlightenment.",
-      "learnAboutUs": "Learn About Us",
-      "visitUs": "Visit Us"
+    "heroImageAlt": "hero · sangha walking through autumn maples",
+    "heroTitle": "A community for mindful living, in the tradition of Plum Village.",
+    "heroDescription": "You are warmly invited to join us for walking meditation, dharma talks, days of mindfulness, and the simple practice of being present together.",
+    "browseLessons": "Browse lessons",
+    "findEvents": "Find Events",
+    "newsEyebrow": "News",
+    "viewAllNews": "View all news →",
+    "eventsEyebrow": "Upcoming Events",
+    "viewAllEvents": "See all events →",
+    "teachingsEyebrow": "Lessons & Teachings",
+    "browseAllLessons": "Browse all lessons →",
+    "visitEyebrow": "Visit Us",
+    "visitTitle": "Everyone is welcome at <em>Hoa Ưu Đàm</em>.",
+    "visitDescription": "Whether you are new to mindfulness or a long-time practitioner, you are welcome here. Come and join us on our journey.",
+    "getInTouch": "Get in touch →"
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "title": "A small sangha, <em>rooted</em> in mindfulness.",
+    "founderImageAlt": "founders teaching outdoors",
+    "intro": "Founded in 2014 by a group of lay practitioners and visiting monastics, Hoa Ưu Đàm grew from quiet living-room sittings into a full community centre. We follow the Plum Village tradition of Zen master Thích Nhất Hạnh — a tradition of engaged, gentle, joyful mindfulness.",
+    "name": "Our name — Hoa Ưu Đàm — refers to the udumbara flower, said in the sutras to bloom only once every three thousand years. It is a reminder of the rare and precious nature of this human life.",
+    "missionEyebrow": "Our Mission",
+    "missionTitle": "To offer a refuge for <em>mindful living</em> — and to walk, gently, with everyone who arrives.",
+    "pillars": [
+      {
+        "n": "01",
+        "title": "Practice",
+        "body": "Daily, weekly, and seasonal opportunities to sit, walk, and breathe in community."
+      },
+      {
+        "n": "02",
+        "title": "Study",
+        "body": "Approachable teachings rooted in the suttas and the gentle voice of Plum Village."
+      },
+      {
+        "n": "03",
+        "title": "Service",
+        "body": "Caring for one another and for the world — quietly, persistently, without grasping."
+      },
+      {
+        "n": "04",
+        "title": "Refuge",
+        "body": "A welcoming home for anyone seeking pause, stillness, and the company of kind friends."
+      }
+    ]
+  },
+  "events": {
+    "eyebrow": "Events",
+    "title": "Upcoming gatherings",
+    "searchPlaceholder": "Search events…",
+    "month": "May 2026",
+    "filters": {
+      "all": "All",
+      "retreat": "Retreats",
+      "day": "Day Practice",
+      "daily": "Daily"
     },
-    "featured": {
-      "title": "Latest Teachings & Updates",
-      "loading": "Loading latest posts from CMS...",
-      "cmsNotConnected": "CMS not yet connected. Content will appear here once Strapi content models are created.",
-      "readMore": "Read More →",
-      "placeholderTitle": "Weekly Dharma Talk",
-      "placeholderDescription": "Join us for inspiring teachings and discussions on Buddhist philosophy and practice. Content will be managed through our CMS once content models are created.",
-      "viewAllPosts": "View All Posts →"
-    },
-    "cta": {
-      "title": "Join Our Community",
-      "description": "Discover peace, wisdom, and compassion through meditation and Buddhist teachings. Everyone is welcome to participate in our programs and events.",
-      "getInTouch": "Get in Touch"
+    "ledBy": "Led by",
+    "addToCalendar": "Add to calendar",
+    "items": {
+      "peaceWalk": {
+        "title": "Peace Walk & Public Talk",
+        "type": "Retreat",
+        "description": "A guided walking meditation through the temple gardens, followed by a public dharma talk on cultivating peace in daily life."
+      },
+      "trueLove": {
+        "title": "Retreat: True Love Heals",
+        "type": "Weekend Retreat",
+        "description": "A three-day silent retreat exploring the four elements of true love: loving-kindness, compassion, joy, and equanimity."
+      },
+      "dayOfMindfulness": {
+        "title": "Day of Mindfulness",
+        "type": "Day Practice",
+        "description": "Join us for a full day of guided meditation, mindful eating, dharma sharing, and gentle community practice."
+      },
+      "morningSitting": {
+        "title": "Daily Morning Sitting & Chanting",
+        "type": "Daily Practice",
+        "description": "Online sitting meditation and sutra chanting in Vietnamese and English. Open to all, every morning except Mondays."
+      }
+    }
+  },
+  "teachings": {
+    "eyebrow": "Teachings",
+    "title": "A library of <em>quiet voices</em>.",
+    "items": {
+      "heartOfUnderstanding": {
+        "title": "The Heart of Understanding",
+        "type": "Talk",
+        "excerpt": "On the practice of looking deeply and the wisdom of interbeing."
+      },
+      "walkingMeditation": {
+        "title": "Walking Meditation",
+        "type": "Guided Practice",
+        "excerpt": "A gentle introduction to bringing mindfulness to each step."
+      },
+      "fiveTrainings": {
+        "title": "The Five Mindfulness Trainings",
+        "type": "Teaching",
+        "excerpt": "A modern reflection on the ethical foundations of mindful living."
+      },
+      "beginningAnew": {
+        "title": "Beginning Anew",
+        "type": "Practice",
+        "excerpt": "A practice for healing relationships and starting fresh."
+      }
+    }
+  },
+  "news": {
+    "eyebrow": "News",
+    "title": "From the sangha at <em>Hoa Ưu Đàm</em>.",
+    "readLetter": "Read the letter →",
+    "items": {
+      "trueLoveRetreat": {
+        "title": "Weekend Retreat: True Love Heals",
+        "category": "Retreat",
+        "excerpt": "Three days of practice on the four elements of true love. Registration opens for the May session."
+      },
+      "australiaTour": {
+        "title": "Australia Tour — Peace is the Way",
+        "category": "Tour",
+        "excerpt": "Sister Chân Không and the monastic delegation visit Sydney, Melbourne and Brisbane this winter."
+      },
+      "togetherFuture": {
+        "title": "Together we have a future",
+        "category": "Sangha",
+        "excerpt": "A letter from the elder brothers and sisters on continuing the practice through uncertain times."
+      },
+      "exhibition": {
+        "title": "Special exhibition commemorating Thích Nhất Hạnh",
+        "category": "Exhibition",
+        "excerpt": "Photographs, calligraphy and personal letters on view in the upper hall through summer."
+      },
+      "bankAccount": {
+        "title": "Announcement: new bank account",
+        "category": "Notice",
+        "excerpt": "Please update your records — our community account has moved to a new institution this month."
+      },
+      "morningSit": {
+        "title": "On-going Morning Sitting Meditation Online",
+        "category": "Practice",
+        "excerpt": "Join the daily online sit at 6:00 AM. All friends, near and far, are warmly welcomed."
+      }
+    }
+  },
+  "resources": {
+    "eyebrow": "Resources",
+    "title": "Take what is useful, leave the rest.",
+    "sections": [
+      {
+        "cat": "Guided Practices",
+        "items": [
+          "Walking meditation",
+          "Sitting meditation",
+          "Deep relaxation",
+          "Mindful eating"
+        ]
+      },
+      {
+        "cat": "Reading",
+        "items": [
+          "Recommended books",
+          "Sutras and chants",
+          "Newsletter archive",
+          "Poems by the sangha"
+        ]
+      },
+      {
+        "cat": "For New Friends",
+        "items": [
+          "What to expect on a visit",
+          "How to start a daily practice",
+          "Glossary of terms",
+          "Frequently asked questions"
+        ]
+      },
+      {
+        "cat": "Children & Families",
+        "items": [
+          "Family practice days",
+          "Stories for young hearts",
+          "Pebble meditation",
+          "Songs of the sangha"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Come by, or send a letter.",
+    "addressLabel": "Address",
+    "emailLabel": "Email",
+    "hoursLabel": "Office Hours",
+    "hours": "Tue – Sun · 8am – 5pm"
+  },
+  "footer": {
+    "tagline": "A community of mindful practice in the tradition of Plum Village.",
+    "visit": "Visit",
+    "copy": "© 2026 Hoa Ưu Đàm",
+    "madeWith": "Made with care.",
+    "newsletter": "Newsletter",
+    "facebook": "Facebook",
+    "youtube": "YouTube",
+    "subLinks": {
+      "about": ["Our story", "Lineage", "Teachers", "Sangha"],
+      "events": [
+        "Calendar",
+        "Retreats",
+        "Day of mindfulness",
+        "Daily sittings"
+      ],
+      "teachings": [
+        "All lessons",
+        "Dharma talks",
+        "Guided practices",
+        "Sutras"
+      ],
+      "news": ["Latest", "Notices", "Newsletter"],
+      "resources": [
+        "For new friends",
+        "Reading list",
+        "Children & families",
+        "FAQ"
+      ],
+      "contact": ["Visit us", "Get in touch", "Newsletter", "Giving"]
     }
   }
 }

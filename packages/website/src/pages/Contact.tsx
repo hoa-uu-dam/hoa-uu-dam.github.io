@@ -1,70 +1,100 @@
-function Contact() {
+import { useTranslation } from 'react-i18next';
+import { useViewport } from '../hooks/useViewport';
+
+export default function Contact() {
+  const { t } = useTranslation();
+  const { isMobile, isTablet } = useViewport();
+  const PAD_X = isMobile ? 20 : isTablet ? 40 : 64;
+  const PAD_Y = isMobile ? 48 : isTablet ? 64 : 80;
+
+  const eyebrow = {
+    fontSize: 11,
+    letterSpacing: '0.12em',
+    textTransform: 'uppercase' as const,
+    color: '#c87a3d',
+    marginBottom: 12,
+  };
+
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-8">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold text-gray-900 mb-8 text-center">
-          Contact Us
-        </h1>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              Get in Touch
-            </h2>
-            <div className="space-y-4">
-              <div>
-                <p className="font-medium text-gray-700">Address:</p>
-                <p className="text-gray-600">
-                  123 Temple Street, Peace City, PC 12345
-                </p>
-              </div>
-              <div>
-                <p className="font-medium text-gray-700">Phone:</p>
-                <p className="text-gray-600">(555) 123-4567</p>
-              </div>
-              <div>
-                <p className="font-medium text-gray-700">Email:</p>
-                <p className="text-gray-600">info@buddhist-temple.org</p>
-              </div>
-              <div>
-                <p className="font-medium text-gray-700">
-                  Meditation Sessions:
-                </p>
-                <p className="text-gray-600">Daily at 6:00 AM and 7:00 PM</p>
-              </div>
-            </div>
+    <div style={{ padding: `${PAD_Y}px ${PAD_X}px` }}>
+      <div
+        style={{
+          fontSize: 11,
+          letterSpacing: '0.18em',
+          textTransform: 'uppercase',
+          color: '#c87a3d',
+          marginBottom: 16,
+        }}
+      >
+        {t('contact.eyebrow')}
+      </div>
+      <h1
+        style={{
+          fontFamily: '"Be Vietnam Pro", sans-serif',
+          fontWeight: 300,
+          fontSize: isMobile ? 36 : isTablet ? 48 : 64,
+          letterSpacing: '-0.02em',
+          margin: `0 0 ${isMobile ? 48 : 64}px`,
+        }}
+      >
+        {t('contact.title')}
+      </h1>
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: isMobile
+            ? '1fr'
+            : isTablet
+              ? '1fr 1fr'
+              : '1fr 1fr 1fr',
+          gap: isMobile ? 36 : isTablet ? 48 : 64,
+          maxWidth: 1000,
+        }}
+      >
+        <div>
+          <div style={eyebrow}>{t('contact.addressLabel')}</div>
+          <div
+            style={{
+              fontSize: isMobile ? 16 : 18,
+              lineHeight: 1.6,
+              color: '#2a2620',
+            }}
+          >
+            42 Lotus Lane
+            <br />
+            Blue Mountains, NSW 2780
+            <br />
+            Australia
           </div>
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              Send us a Message
-            </h2>
-            <form className="space-y-4">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <textarea
-                rows={4}
-                placeholder="Your Message"
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              ></textarea>
-              <button
-                type="submit"
-                className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md transition-colors"
-              >
-                Send Message
-              </button>
-            </form>
+        </div>
+        <div>
+          <div style={eyebrow}>{t('contact.emailLabel')}</div>
+          <a
+            href="mailto:hello@hoauudam.org"
+            style={{
+              fontSize: isMobile ? 16 : 18,
+              color: '#2a2620',
+              textDecoration: 'none',
+              boxShadow: 'inset 0 -6px 0 -3px #f2a968',
+              paddingBottom: 1,
+            }}
+          >
+            hello@hoauudam.org
+          </a>
+        </div>
+        <div>
+          <div style={eyebrow}>{t('contact.hoursLabel')}</div>
+          <div
+            style={{
+              fontSize: isMobile ? 15 : 16,
+              lineHeight: 1.7,
+              color: '#3a342b',
+            }}
+          >
+            {t('contact.hours')}
           </div>
         </div>
       </div>
     </div>
   );
 }
-
-export default Contact;

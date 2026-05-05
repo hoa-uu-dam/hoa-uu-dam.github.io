@@ -4,16 +4,18 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import Layout from './layouts/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
-import Blog from './pages/Blog';
+import Events from './pages/Events';
+import Teachings from './pages/Teachings';
+import News from './pages/News';
+import Resources from './pages/Resources';
 import Contact from './pages/Contact';
 import './i18n';
 
-// Create a client
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      staleTime: 5 * 60 * 1000, // 5 minutes
-      gcTime: 10 * 60 * 1000, // 10 minutes
+      staleTime: 5 * 60 * 1000,
+      gcTime: 10 * 60 * 1000,
       retry: 1,
       refetchOnWindowFocus: false,
     },
@@ -28,7 +30,10 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="blog" element={<Blog />} />
+            <Route path="events" element={<Events />} />
+            <Route path="teachings" element={<Teachings />} />
+            <Route path="news" element={<News />} />
+            <Route path="resources" element={<Resources />} />
             <Route path="contact" element={<Contact />} />
           </Route>
         </Routes>
