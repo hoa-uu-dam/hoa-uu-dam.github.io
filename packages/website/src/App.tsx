@@ -25,7 +25,7 @@ const queryClient = new QueryClient({
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Router basename={import.meta.env.BASE_URL}>
+      <Router>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
